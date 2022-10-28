@@ -1,0 +1,130 @@
+:root {
+  --primary-color: rgb(80, 200, 120);
+}
+
+#body-main {                      /* Home page */
+  background: url(images/girl.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-style: Roboto;
+  color: white;
+}
+
+#body-about, #body-contact {                       /* About and Contact pages */
+  background-color: black;
+  font-style: Roboto;
+  color: white;
+}
+
+a {
+  font-size: 22px;
+  text-align: center;
+  margin: 0 1em;
+  transition: color .25s;
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 60px;
+  margin: 100px 10px 50px 80px;
+  transition: color .25s;
+  width: 250px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.company-logo {
+  font-size: 27px;
+  text-decoration: none;
+  color: white;
+  margin-left: 50px;
+  margin-right: 500px;
+  letter-spacing: 2px;
+}
+
+.company-logo:hover {
+  cursor: pointer;
+}
+
+.navbar-tabs {
+  display: inline-block;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 1em;
+  transition: color .25s;
+  text-decoration: none;
+}
+
+.navbar-tabs:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.socials {
+  width: 30px;
+  float: right;
+  margin-left: 10px;
+}
+
+.socials:hover {
+  cursor: pointer;
+}
+
+.main-text {
+  margin: 8em;
+  display: inline-block;
+}
+
+.author {
+  font-size: 60px;
+  transition: color .5s;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.author:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: 22px;
+  letter-spacing: 8px;
+  text-align: center;
+}
+
+.bio-text {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 0;
+  line-height: 30px;
+  width: 450px;
+}
+
+.about-img {
+  width: 350px;
+  float: right;
+  margin: 0 100px 0 50px;
+  border: solid;
+  border-color: var(--primary-color);
+}
