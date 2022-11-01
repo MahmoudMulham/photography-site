@@ -2,7 +2,8 @@
   --primary-color: rgb(80, 200, 120);
 }
 
-#body-main {                      /* Home page */
+/* Home page */
+#body-main {                      
   background: url(images/girl.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -12,7 +13,8 @@
   color: white;
 }
 
-#body-about, #body-contact {                       /* About and Contact pages */
+/* About and Contact pages */
+#body-about, #body-contact {                       
   background-color: black;
   font-style: Roboto;
   color: white;
@@ -38,7 +40,7 @@ a:hover {
 
 h1 {
   font-size: 60px;
-  margin: 100px 10px 50px 80px;
+  margin: 100px 0 50px;
   transition: color .25s;
   width: 250px;
 }
@@ -48,8 +50,12 @@ h1:hover {
   color: var(--primary-color);
 }
 
-.container {
+.navbar {
   margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .company-logo {
@@ -57,7 +63,7 @@ h1:hover {
   text-decoration: none;
   color: white;
   margin-left: 50px;
-  margin-right: 500px;
+
   letter-spacing: 2px;
 }
 
@@ -66,16 +72,21 @@ h1:hover {
 }
 
 .navbar-tabs {
-  display: inline-block;
+  width: 470px;
   font-size: 22px;
-  text-align: center;
-  margin: 0 1em;
+  text-align: right;
   transition: color .25s;
   text-decoration: none;
+  flex: 1;
+  margin-right: 60px;
 }
 
 .navbar-tabs:hover {
   cursor: pointer;
+  color: var(--primary-color);
+}
+
+#active-tab-color {
   color: var(--primary-color);
 }
 
@@ -112,7 +123,7 @@ h1:hover {
   text-align: center;
 }
 
-.bio-text {
+.biography {
   font-size: 18px;
   margin-top: 30px;
   margin-left: 80px;
@@ -124,7 +135,70 @@ h1:hover {
 .about-img {
   width: 350px;
   float: right;
-  margin: 0 100px 0 50px;
+  margin: 180px 100px 0 50px;
   border: solid;
+  border-color: var(--primary-color);
+}
+
+.contact-info {
+  width: 300px;
+
+}
+
+.contact-info {
+  font-size: 16px;
+  font-size: 18px;
+  margin-left: 80px;
+  margin-right: 0;
+  line-height: 30px;
+  margin-top: 170px;
+  width: 300px;
+}
+
+.contact-form {
+  float: right;
+  margin-top: 150px;
+  margin-right: 150px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  background-color: black;
+  border-color: black;
+  border-bottom-color: white;
+  color: white;
+  transition: border-color .25s;
+  display: block;
+}
+
+label {
+  display: block;
+ }
+
+input:hover {
+  border-color: white;
+}
+
+.feedback-input {
+  input {
+    padding: 10px 5px; 
+    line-height: 28px;
+    width: 400px;
+  }
+}
+
+button {
+  width: 400px;
+  color: var(--primary-color);
+  border-color: black;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+  transition: border-color .25s;
+}
+
+button:hover {
   border-color: var(--primary-color);
 }
